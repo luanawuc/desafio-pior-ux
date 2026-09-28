@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Fácil</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>✨ BEM-VINDO AO CADASTRO MAIS FÁCIL DO MUNDO ✨</h1>
+    <div class="caixa inicio">
+        <h1>✨ BEM-VINDO AO CADASTRO MAIS FÁCIL DO MUNDO ✨</h1>
 
-    <p>
-        Para continuar, clique no botão correto.
-        Mas cuidado: talvez ele não seja o que você pensa.
-    </p>
+        <p>
+            Para continuar, clique no botão correto.
+            Mas cuidado: talvez ele não seja o que você pensa.
+        </p>
 
-    <button>
-        CANCELAR
-    </button>
+        <p class="aviso">
+            IMPORTANTE: leia tudo antes de clicar em qualquer coisa.
+        </p>
 
-    <button>
-        Continuar
-    </button>
+        <button class="cancelar" onclick="irParaCadastro()">
+            CANCELAR
+        </button>
+
+        <button class="continuar" onclick="irParaCadastro()">
+            Continuar
+        </button>
+
+        <p class="mini">
+            *Ao clicar em qualquer botão você concorda com alguma coisa.
+        </p>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
