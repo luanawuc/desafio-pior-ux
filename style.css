@@ -1,1 +1,224 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffff00;
+    color: #eeeeee;
+}
+
+.caixa {
+    width: 650px;
+    max-width: 90%;
+    margin: 70px auto;
+    padding: 35px;
+    background: #ff00ff;
+    border: 12px dotted #00ff00;
+    box-shadow: 15px 15px 0px #0000ff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    color: #00ffff;
+    text-shadow: 4px 4px #000000;
+    transform: rotate(-2deg);
+}
+
+h2 {
+    font-size: 35px;
+    color: #ffff00;
+}
+
+p {
+    font-size: 19px;
+}
+
+.aviso {
+    background: white;
+    color: red;
+    padding: 15px;
+    border: 5px solid red;
+    font-weight: bold;
+}
+
+.mini {
+    font-size: 11px;
+    color: #ffffff;
+}
+
+/* BOTÕES */
+
+button {
+    cursor: pointer;
+    border: 5px outset gray;
+    padding: 15px 25px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.cancelar {
+    background: green;
+    color: white;
+    font-size: 28px;
+}
+
+.continuar {
+    background: #cccccc;
+    color: #999999;
+    font-size: 12px;
+}
+
+/* FORMULÁRIO */
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px;
+    border: 5px solid blue;
+    background: #ffff99;
+}
+
+input::placeholder {
+    color: #999999;
+}
+
+.regras {
+    margin-top: 25px;
+    padding: 15px;
+    background: #ffffff;
+    color: #ff0000;
+    text-align: left;
+    border: 7px double black;
+}
+
+.regras li {
+    margin: 8px;
+}
+
+.confuso {
+    background: #000000;
+    color: #00ff00;
+    padding: 15px;
+}
+
+.botao-ruim {
+    background: red;
+    color: yellow;
+    font-size: 22px;
+}
+
+#mensagem {
+    color: yellow;
+    background: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* CONFIRMAÇÃO */
+
+.termos {
+    margin: 30px 0;
+    padding: 20px;
+    background: #00ff00;
+    color: #ff0000;
+    text-align: left;
+}
+
+.confirmar {
+    background: green;
+    color: white;
+    font-size: 25px;
+}
+
+.pequeno {
+    background: #eeeeee;
+    color: #bbbbbb;
+    font-size: 10px;
+    padding: 5px;
+}
+
+#confirmacaoMensagem {
+    background: yellow;
+    color: red;
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* TELA FINAL */
+
+.final {
+    background: #0000ff;
+    color: white;
+    border: 15px dashed yellow;
+    transform: rotate(1deg);
+}
+
+.final h1 {
+    color: #00ff00;
+    font-size: 55px;
+}
+
+.resultado {
+    margin: 30px;
+    padding: 25px;
+    background: white;
+    color: black;
+    border: 10px double red;
+}
+
+.explicacao {
+    background: #ff00ff;
+    padding: 20px;
+}
+
+a {
+    color: yellow;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.voltar {
+    color: #00ff00;
+}
+
+/* DEIXANDO A EXPERIÊNCIA AINDA PIOR */
+
+.cadastro {
+    transform: rotate(-1deg);
+}
+
+.confirmacao {
+    transform: rotate(2deg);
+}
+
+@media (max-width: 700px) {
+    .caixa {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    button {
+        max-width: 80%;
+    }
+}
