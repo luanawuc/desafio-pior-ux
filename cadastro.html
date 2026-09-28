@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Super Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <div class="caixa cadastro">
+
+        <h1>CADASTRO SUPER SIMPLES</h1>
+
+        <p class="confuso">
+            Preencha os campos abaixo corretamente.
+            Ou não. Nós também não sabemos.
+        </p>
+
+        <form id="formulario">
+
+            <label for="nome">Nome completo:</label>
+            <input 
+                type="text" 
+                id="nome" 
+                placeholder="Digite seu nome aqui, mas não seu nome"
+            >
+
+            <label for="email">E-mail:</label>
+            <input 
+                type="email" 
+                id="email" 
+                placeholder="exemplo@naoexiste.com"
+            >
+
+            <label for="senha">Senha:</label>
+            <input 
+                type="password" 
+                id="senha" 
+                placeholder="Sua senha NÃO deve ser digitada aqui"
+            >
+
+            <div class="regras">
+                <strong>REGRAS DA SENHA:</strong>
+
+                <ul>
+                    <li>Deve ter pelo menos 8 caracteres.</li>
+                    <li>Não pode ter mais de 7 caracteres.</li>
+                    <li>Deve conter números.</li>
+                    <li>Não pode conter números.</li>
+                    <li>Deve conter letras.</li>
+                    <li>Não pode conter letras.</li>
+                </ul>
+            </div>
+
+            <p id="mensagem"></p>
+
+            <button type="button" class="botao-ruim" onclick="validarCadastro()">
+                NÃO CLIQUE AQUI
+            </button>
+
+        </form>
+
+        <a href="index.html" class="voltar">
+            ← Voltar (talvez)
+        </a>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
