@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="caixa confirmacao">
+
+        <h1>QUASE ACABOU!</h1>
+
+        <p class="mensagem-grande">
+            Seu cadastro foi realizado com sucesso.
+        </p>
+
+        <p>
+            Ou talvez não.
+        </p>
+
+        <div class="termos">
+            <label>
+                <input type="checkbox" id="termos">
+                Eu NÃO concordo que concordo com os termos que talvez
+                eu tenha lido e provavelmente não li.
+            </label>
+        </div>
+
+        <button class="confirmar" onclick="confirmarCadastro()">
+            CANCELAR CONFIRMAÇÃO
+        </button>
+
+        <button class="pequeno" onclick="confirmarCadastro()">
+            confirmar
+        </button>
+
+        <p id="confirmacaoMensagem"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
 
